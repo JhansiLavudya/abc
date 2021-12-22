@@ -1,0 +1,283 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled7.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyP5eC2FIT9/f1C4Us1+17de",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JhansiLavudya/abc/blob/main/python%20exception%20code\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 373
+        },
+        "id": "gYJnFpSVydQv",
+        "outputId": "9c9825cf-9aa9-4438-c0e6-9a3432d0448d"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "ModuleNotFoundError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-2-d2e8cefd2223>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtkinter\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;31m#from PIL import Image, ImageTk\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mplyer\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mnotification\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtkinter\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mmessagebox\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mPIL\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mImage\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mImageTk\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'plyer'",
+            "",
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0;32m\nNOTE: If your import is failing due to a missing package, you can\nmanually install dependencies using either !pip or !apt.\n\nTo view examples of installing some common dependencies, click the\n\"Open Examples\" button below.\n\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n"
+          ],
+          "errorDetails": {
+            "actions": [
+              {
+                "action": "open_url",
+                "actionText": "Open Examples",
+                "url": "/notebooks/snippets/importing_libraries.ipynb"
+              }
+            ]
+          }
+        }
+      ],
+      "source": [
+        "from tkinter import *\n",
+        "#from PIL import Image, ImageTk\n",
+        "from plyer import notification\n",
+        "from tkinter import messagebox\n",
+        "from PIL import Image, ImageTk\n",
+        "import time\n",
+        "\n",
+        "\n",
+        "'''# get details\n",
+        "def get_details():\n",
+        "    get_title = title.get()\n",
+        "    get_msg = msg.get()\n",
+        "    get_time = time1.get()\n",
+        "    # print(get_title,get_msg, tt)\n",
+        "\n",
+        "    if get_title == \"\" or get_msg == \"\" or get_time == \"\":\n",
+        "        messagebox.showerror(\"Alert\", \"All fields are required!\")\n",
+        "    else:\n",
+        "        int_time = int(float(get_time))\n",
+        "        min_to_sec = int_time * 60\n",
+        "        messagebox.showinfo(\"notifier set\", \"set notification ?\")\n",
+        "        t.destroy()\n",
+        "        time.sleep(min_to_sec)\n",
+        "\n",
+        "        notification.notify(title=get_title,\n",
+        "                            message=get_msg,\n",
+        "                            app_name=\"Notifier\",\n",
+        "                            app_icon=\"ico.ico\",\n",
+        "                            toast=True,\n",
+        "                            timeout=10)'''\n",
+        "def Task():\n",
+        "    # get details\n",
+        "    def get_details():\n",
+        "      get_title = title.get()\n",
+        "      get_msg = msg.get()\n",
+        "      get_time = time1.get()\n",
+        "    # print(get_title,get_msg, tt)\n",
+        "\n",
+        "      if get_title == \"\" or get_msg == \"\" or get_time == \"\":\n",
+        "        messagebox.showerror(\"Alert\", \"All fields are required!\")\n",
+        "      else:\n",
+        "        int_time = int(float(get_time))\n",
+        "        min_to_sec = int_time * 60\n",
+        "        messagebox.showinfo(\"notifier set\", \"set notification ?\")\n",
+        "        t.destroy()\n",
+        "        time.sleep(min_to_sec)\n",
+        "\n",
+        "        notification.notify(title=get_title,\n",
+        "                            message=get_msg,\n",
+        "                            app_name=\"Notifier\",\n",
+        "                            app_icon=\"ico.ico\",\n",
+        "                            toast=True,\n",
+        "                            timeout=10)\n",
+        "    t = Tk()\n",
+        "    t.title('TASK NOTIFICATION')\n",
+        "    t.geometry(\"900x300\")\n",
+        "    img = Image.open(\"notify-label.png\")\n",
+        "    tkimage = ImageTk.PhotoImage(img)\n",
+        "   # img_label =Label(t, image=tkimage).grid()\n",
+        "\n",
+        "\n",
+        "    t_label = Label(t, text=\"Title to Notify\",font=(\"poppins\", 10))\n",
+        "    t_label.place(x=12, y=70)\n",
+        "\n",
+        "\n",
+        "    title = Entry(t, width=\"25\",font=(\"poppins\", 13))\n",
+        "    title.place(x=123, y=70)\n",
+        "\n",
+        "\n",
+        "    m_label = Label(t, text=\"Display Message\", font=(\"poppins\", 10))\n",
+        "    m_label.place(x=12, y=120)\n",
+        "\n",
+        "\n",
+        "    msg = Entry(t, width=\"40\", font=(\"poppins\", 13))\n",
+        "    msg.place(x=123,height=30, y=120)\n",
+        "\n",
+        "\n",
+        "    time_label = Label(t, text=\"Set Time\", font=(\"poppins\", 10))\n",
+        "    time_label.place(x=12, y=175)\n",
+        "\n",
+        "\n",
+        "    time1 = Entry(t, width=\"5\", font=(\"poppins\", 13))\n",
+        "    time1.place(x=123, y=175)\n",
+        "\n",
+        "\n",
+        "    time_min_label = Label(t, text=\"min\", font=(\"poppins\", 10))\n",
+        "    time_min_label.place(x=175, y=180)\n",
+        "\n",
+        "\n",
+        "    but = Button(t, text=\"SET NOTIFICATION\", font=(\"poppins\", 10, \"bold\"), fg=\"#ffffff\", bg=\"#528DFF\", width=20,relief=\"raised\",command=get_details)\n",
+        "    but.place(x=170, y=230)\n",
+        "\n",
+        "    t.resizable(0,0)\n",
+        "    t.mainloop()\n",
+        "root=Tk()\n",
+        "root.title('Remainder App')\n",
+        "root.geometry(\"700x300\")\n",
+        "#img = Image.open(\"notify-label.png\")\n",
+        "#tkimage = ImageTk.PhotoImage(img)\n",
+        "lab=Label(root, text=\"REMAINDER APP\", font=(\"poppins\", 50))\n",
+        "lab.place(x=12, y=12)\n",
+        "button = Button(root, text=\"TASK\", font=(\"poppins\", 10, \"bold\"), fg=\"#ffffff\", bg=\"#528DFF\", width=20,\n",
+        "             relief=\"raised\",\n",
+        "             command=Task)\n",
+        "button1 = Button(root, text=\"EVENT\", font=(\"poppins\", 10, \"bold\"), fg=\"#ffffff\", bg=\"#528DFF\", width=20,\n",
+        "             relief=\"raised\")\n",
+        "button.place(x=200,y=230)\n",
+        "button1.place(x=200,y=130)\n",
+        "root.mainloop()+"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class ThrowException{\n",
+        "    static void fun()\n",
+        "    {\n",
+        "        try\n",
+        "        {\n",
+        "            throw new NullPointerException(\"demo\");\n",
+        "        }\n",
+        "        catch(NullPointerException e)\n",
+        "        {\n",
+        "            System.out.println(\"Caught inside fun().\");\n",
+        "            throw e; // rethrowing the exception\n",
+        "        }\n",
+        "    }\n",
+        " \n",
+        "    public static void main(String args[])\n",
+        "    {\n",
+        "        try\n",
+        "        {\n",
+        "            fun();\n",
+        "        }\n",
+        "        catch(NullPointerException e)\n",
+        "        {\n",
+        "            System.out.println(\"Caught in main.\");\n",
+        "        }\n",
+        "    }\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "vqPfYzVE2z2v"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "duf__-td4oCm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"hii\")\n",
+        "print(\"hello world\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tgvE-AiK4p3N",
+        "outputId": "5c11ff71-9efc-4aea-c2b4-4d48c4dcb034"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hii\n",
+            "hello world\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Python program to handle simple runtime error\n",
+        "#Python 3\n",
+        " \n",
+        "a = [1, 2, 3]\n",
+        "try:\n",
+        "    print (\"Second element = %d\" %(a[1]))\n",
+        " \n",
+        "    # Throws error since there are only 3 elements in array\n",
+        "    print (\"Fourth element = %d\" %(a[3]))\n",
+        " \n",
+        "except:\n",
+        "    print (\"An error occurred\")"
+      ],
+      "metadata": {
+        "id": "twPholUV8eso",
+        "outputId": "5aeb37f8-0337-4a05-b9a7-acbcce566bc0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Second element = 2\n",
+            "An error occurred\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
